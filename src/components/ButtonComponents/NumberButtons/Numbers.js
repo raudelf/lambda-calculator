@@ -17,8 +17,8 @@ export default function Numbers(props) {
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-       {num.map((num) => {
-        return <Button button={num}/>
+       {num.map((num, index) => {
+        return <Button key={index} button={num}/>
        })}
     </div>
   );
